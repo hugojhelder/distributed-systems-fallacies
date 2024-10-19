@@ -1,0 +1,34 @@
+=== Canvas
+
+Canvas kennen jullie! Echt waar. Op Canvas worden cursussen aangemaakt als template, en die kunnen dan elke keer dat de cursus gegeven wordt geïnstantieerd worden. Daarna kunnen er tweaks voor die specifieke editie van de cursus worden gedaan.
+
+Een cursus in Canvas bestaat (in dit kleine geval) uit paginas en opdrachten. Deze paginas en opdrachten kunnen gegroepeerd worden in modules.
+
+In dit voorbeeld delen we Canvas in 3 onderdelen in: 
+
+* Cursusmateriaal
+* Cursusplanning
+* Cursusverloop
+
+Bij de HU correspondeert dit met de verschillende verantwoordelijkheden van een vakontwerper, een vakcoördinator, en een docent. De vakontwerper is verantwoordelijk voor de inhoud, en dat het HBO-waardig is. De vakcoördinator zorgt er voor dat het onderwijs daadwerkelijk gegeven wordt, en dat verschillende klassen gelijkwaardig onderwijs krijgen. En een docent is verantwoordelijk voor het onderwijs aan diens klas.
+
+Cursusmateriaal houdt zich bezig met de algemene opzet van cursussen: modules met content, voorvereisten, en andere eigenschappen (aantal lessen, niveau, etc.). Vanuit dit verspectief zijn we bezig met een cursus zoals deze zou gegeven kunnen worden.
+
+Cursusplanning houdt zich bezig het klaarzetten van een cursus om daadwerkelijk, door een docent, aan een klas studenten gegeven te kunnen worden. Elk jaar moeten er natuurlijk een aantal kleine dingen getweaked worden (omdat vrije dagen of vakanties op een bepaalde manier vallen bijv.). Die updates aan het materiaal moeten dan per wijziging wel/niet terug het template in geaccepteerd kunnen worden.
+
+Cursusverloop houdt zich bezich met een cursus die daadwerkelijk gegeven wordt. We willen aankondigingen kunnen doen, opdrachten kunnen inleveren en nakijken. Bij ziekte of andere onverwachte zaken moet een coördinator makkelijk werk kunnen herverdelen.
+
+Rode draad:
+Een template voor een vak (modules/lessen) wordt aangemaakt. Dat template wordt geïnstantieerd en studenten kunnen zich er voor inschrijven. Docenten kunnen gekoppeld worden. Vervolgens kunnen die studenten opdrachten inleveren waar de docent een cijfer aan kan toekennen.
+
+==== Microservices fase
+
+Te realiseren integraties:
+
+* Osiris is nu leidend in welke cursussen er gegeven moeten worden. Het is wel mogelijk om een cursus te ontwerpen zonder dat er een Osiris-entry is. (Uitzondering: Canvas wordt ook stiekem gebruikt voor een docenten-cursus, resultaten daarvan moeten gecommuniceerd worden met Youforce, en hier zijn dus de docenten juist de studenten)
+* Osiris is leidend welke studenten welke cursus volgen.
+* Canvas is leidend of een cursus behaald is. Als een student volgens Canvas de cursus behaald heeft, dan dient Osiris op de hoogte gesteld te zijn, en moeten de resultaten ingevuld worden.
+* Youforce is nu leidend welke docenten er op cursussen ingezet kunnen worden.
+* Een opdracht in Canvas kan aan een toets in TestVision gekoppeld worden. Dat betekent dat een resultaat uit TestVision automatisch in Canvas terecht komt (en vaak ook automatisch in Osiris).
+* Stages uit Onstage vallen binnen een Canvas-cursus (voor aankondigingen, materiaal, etc.). De beoordeling van de stage kan aan een Canvas-opdracht gekoppeld worden, en zo kan een beoordeling uit Onstage automatisch terecht komen in Canvas (en vaak ook automatisch in Osiris).
+

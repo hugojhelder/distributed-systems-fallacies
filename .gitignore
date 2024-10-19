@@ -1,0 +1,9 @@
+.idea
+target
+*.iml
+*.xml
+*.txt
+*.class
+*.lst
+*.dump
+!pom.xml

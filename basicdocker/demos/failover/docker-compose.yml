@@ -1,0 +1,27 @@
+version: "3.9"
+services:
+  s1:
+    build: s1
+    tty: true
+    networks:
+      - nw1
+    cap_add:
+      - NET_ADMIN
+  s2:
+    build: s2
+    tty: true
+    networks:
+      - nw1
+    cap_add:
+      - NET_ADMIN
+  client:
+    build: ./client
+    tty: true
+    networks:
+      - nw1
+networks:
+  nw1:
+    ipam:
+      config:
+            - subnet: 192.168.42.0/24
+              gateway: 192.168.42.254
