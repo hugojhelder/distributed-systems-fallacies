@@ -1,5 +1,7 @@
 # distributed-systems-fallacies
-This is a reposistory containing dozens of demos that highlight one or more distributed systems fallacies. For instance caching problems, clock skewing, messaging fallacies, distributed transaction fallacies, and domain driven design problems with encapsulation
+This is a reposistory containing dozens of demos that highlight one or more distributed systems fallacies. For instance caching problems, clock skewing, messaging fallacies, distributed transaction fallacies, and domain driven design problems with encapsulation.
+
+In use in end level (P3/senior year) courses.
 
 # Assorti backend demos
 
